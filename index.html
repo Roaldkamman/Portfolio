@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roald's Digital Portfolio</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap" rel="stylesheet">
+</head>
+<body class="container">
+  <header>
+    <div class="nav-div">
+       <h1>Roald Kamman</h1> 
+       <div class="menu" id="menuId">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+       </div>
+       <nav>
+          <ul class="nav-ul">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+       </nav>
+    </div>
+    
+    <div id="Home" class="intro">
+      <h3 class="intro-text">I love creating projects that feel alive through interesting animations and interactions.</h3>
+      <span id="typed"></span>
+    </div>
+  </header>
+  
+  <div>
+    <h2 id="projects">Projects</h2>
+    <hr class="hr-1">
+  </div>
+  <section class="projects-container">
+      <div class="overlay-container">
+        <img src="images/responsiveForm.PNG" alt="form project" class="project-image">
+        <div class="image-overlay">
+          <div class="overlay-text">
+            <p>Responsive Form</p>
+            <p class="mini-description">This is a generic description of this project and includes some minor details</p>
+            <button class="more-info-btn">More information</button><button class="live-view-btn">Live View</button>
+          </div>
+        </div>
+        <div class="hover-items"></div>
+      </div>
+    
+
+  </section>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

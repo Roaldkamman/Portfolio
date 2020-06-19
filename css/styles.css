@@ -1,0 +1,247 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Odibee Sans', cursive;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1 {
+    font-size: 1.5rem;
+    margin-left: 10px;
+    text-shadow: -2px 2px 1px rgb(112, 112, 112);
+    letter-spacing: 1px;
+}
+
+#typed {
+   font-size: 1.8rem;
+   text-shadow: -2px 2px 1px rgb(112, 112, 112);
+}
+
+#projects {
+    text-align: center;
+    text-shadow: -2px 2px 1px rgb(112, 112, 112);
+    margin-top: 0;
+    margin-bottom: 0;
+    letter-spacing: 1px;
+}
+
+.hr-1 {
+    margin: 2px 0 20px 0;
+}
+
+.intro-text {
+    text-align: center;
+    letter-spacing: 1px;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    background-color: black;
+}
+
+.nav-div {
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    flex-wrap: wrap;
+    border-bottom: 3px solid rgba(211, 211, 211, 0.822);
+    margin-bottom: 10px;
+    background-color: black;
+    box-shadow: 3px 1px 1px 2px rgba(255, 255, 255, 0.5);
+}
+
+.nav-ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100vw;
+    padding-left: 0;
+    padding-right: 20px;
+    margin-bottom: 20px;
+    z-index: 100;
+}
+
+li {
+    letter-spacing: 1px;
+    list-style: none;
+    display: block;
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+li:hover {
+    text-shadow: -2px 2px 1px rgb(112, 112, 112);
+    transform: scale(1.3);
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.intro {
+    background: linear-gradient(#000000, transparent 10%),
+    linear-gradient(0deg, rgb(0, 0, 0), transparent),
+    #000000 url('../images/tech.jpg') no-repeat center;
+    background-size: cover;
+    overflow: hidden;
+    height: 150px;
+    margin-top: 80px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.profile-image {
+    width: 10%;
+    border-radius: 50%;
+}
+
+.menu {
+    display: inline-block; 
+    margin-left: 10px;
+    visibility: visible;
+    margin: 5px 10px 10px auto;
+}
+    
+  
+.menu .line {
+    width: 30px;
+    height: 5px;
+    background-color: #ffffff;
+    display: block;
+    margin: 8px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out; 
+}
+  
+.menu:hover {
+    cursor: pointer; 
+}
+  
+#menuId.is-active .line:nth-child(2) {
+    opacity: 0; 
+}
+  
+#menuId.is-active .line:nth-child(1) {
+    -webkit-transform: translateY(13px) rotate(45deg);
+    -ms-transform: translateY(13px) rotate(45deg);
+    -o-transform: translateY(13px) rotate(45deg);
+    transform: translateY(13px) rotate(45deg); 
+}
+  
+#menuId.is-active .line:nth-child(3) {
+    -webkit-transform: translateY(-13px) rotate(-45deg);
+    -ms-transform: translateY(-13px) rotate(-45deg);
+    -o-transform: translateY(-13px) rotate(-45deg);
+    transform: translateY(-13px) rotate(-45deg); 
+}
+
+.projects-container 
+.overlay-container 
+.project-image
+.image-overlay
+.overlay-text
+.hover-items
+.more-info-btn
+.live-view-btn {
+    z-index: 0;
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 200px;
+}
+
+.overlay-container {
+    position: relative;
+    width: 80%;
+}
+
+.project-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    border-radius: 20%;
+}
+
+.image-overlay {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: #00000081;
+    overflow: hidden;
+    width: 100%;
+    height:0;
+    transition: .5s ease;
+} 
+
+.overlay-container:hover .image-overlay {
+    bottom: 0;
+    height: 100%;
+    transition: 1s ease;
+    border-radius: 3%;
+    border-top: 2px solid lightgrey;
+    border-left: 2px solid lightgrey;
+    border-right: 2px solid lightgrey;
+}  
+
+.overlay-container:hover > .project-image {
+    transition: .5s ease;
+    border-radius: 3%;
+}
+
+.overlay-text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    text-shadow: -2px 2px 1px rgb(0, 0, 0);
+    letter-spacing: 1px;
+}
+
+.hover-items {
+    padding-bottom: 120px;
+}
+
+.more-info-btn {
+    margin-right: 10px;
+}
+
+button {
+    border: 3px solid rgb(255, 255, 255);
+    padding: 7px 5px;
+    border-radius: 12%;
+    cursor: pointer;
+    color: white;
+    background-color: #555555;
+    text-shadow: -2px 2px 1px rgb(0, 0, 0);
+}
+
+button:hover {
+    box-shadow: -1px 1px 1px 2px rgba(0, 0, 0, 0.5);
+    transform: scale(1.1);
+}
+
+@media (min-width: 750px) {
+        
+}
