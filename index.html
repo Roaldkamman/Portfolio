@@ -6,12 +6,14 @@
     <title>Roald's Digital Portfolio</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="images/favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap" rel="stylesheet">
 </head>
 <body class="container">
-  <header>
+  <header id="home">
     <div class="nav-div">
        <h1>Roald Kamman</h1> 
+       <img src="images/svg/RoaldDigitalSignatureWhite.svg" class="signature">
        <div class="menu" id="menuId">
         <span class="line"></span>
         <span class="line"></span>
@@ -19,39 +21,210 @@
        </div>
        <nav>
           <ul class="nav-ul">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li class="nav-li"><a href="#home">Home</a></li>
+            <li class="nav-li"><a href="#projects">Projects</a></li>
+            <li class="nav-li"><a href="#about">About</a></li>
+            <li class="nav-li"><a href="#contact">Contact</a></li>
           </ul>
        </nav>
     </div>
     
-    <div id="Home" class="intro">
+    <div class="intro">
       <h3 class="intro-text">I love creating projects that feel alive through interesting animations and interactions.</h3>
       <span id="typed"></span>
     </div>
   </header>
-  
-  <div>
-    <h2 id="projects">Projects</h2>
-    <hr class="hr-1">
-  </div>
-  <section class="projects-container">
+  <main>
+  <section id="projects">
+    <div>
+      <h2>Projects</h2>
+      <hr class="hr-1">
+    </div>
+
+    <div class="projects-container">
+
       <div class="overlay-container">
-        <img src="images/responsiveForm.PNG" alt="form project" class="project-image">
+        <img src="images/webAppDashboard.jpg" alt="web app dashboard project" class="project-image">
         <div class="image-overlay">
           <div class="overlay-text">
-            <p>Responsive Form</p>
-            <p class="mini-description">This is a generic description of this project and includes some minor details</p>
-            <button class="more-info-btn">More information</button><button class="live-view-btn">Live View</button>
+            <h4 class="overlay-header">Social Media</h4>
+            <p class="mini-description">In this project I created an interactive dashboard according to the mockup given to me by the designer.</p>
+            <button class="more-info-btn">Readme</button><button class="live-view-btn">Live View</button>
+          </div>
+        </div>
+        <div class="hover-items"></div>
+      </div>
+
+    </div>
+
+    <div class="projects-container parallax">
+
+      <div class="overlay-container">
+        <img src="images/wordGame.jpg" alt="word game project" class="project-image">
+        <div class="image-overlay">
+          <div class="overlay-text">
+            <h4 class="overlay-header">Guessing Game</h4>
+            <p class="mini-description">I used Javascript, HTML, and CSS to create this fun word guessing game.</p>
+            <button class="more-info-btn">Readme</button><button class="live-view-btn">Live View</button>
+          </div>
+        </div>
+        <div class="hover-items"></div>
+      </div>
+
+      <div class="overlay-container">
+        <img src="images/responsiveForm.jpg" alt="form project" class="project-image">
+        <div class="image-overlay">
+          <div class="overlay-text">
+            <h4 class="overlay-header">Responsive Form</h4>
+            <p class="mini-description">I created this responsive form from the ground up using a mockup that was given to me by a designer.</p>
+            <button class="more-info-btn">Readme</button><button class="live-view-btn">Live View</button>
+          </div>
+        </div>
+        <div class="hover-items"></div>
+      </div>
+
+      <div class="overlay-container">
+        <img src="images/Yahtzee.jpg" alt="yahtzee project" class="project-image">
+        <div class="image-overlay">
+          <div class="overlay-text">
+            <h4 class="overlay-header">Yahtzee Dice</h4>
+            <p class="mini-description">I created this app so you can play yahtzee if you lost your dice.</p>
+            <button class="more-info-btn">Readme</button><button class="live-view-btn">Live View</button>
+          </div>
+        </div>
+        <div class="hover-items"></div>
+      </div>
+
+      <div class="overlay-container">
+        <img src="images/webStyleGuide.jpg" alt="web style guide project" class="project-image">
+        <div class="image-overlay">
+          <div class="overlay-text">
+            <h4 class="overlay-header">Style Guide</h4>
+            <p class="mini-description">In this project I created a style guide using many different CSS methods. I then refactored the CSS into SASS.</p>
+            <button class="more-info-btn">Readme</button><button class="live-view-btn">Live View</button>
+          </div>
+        </div>
+        <div class="hover-items"></div>
+      </div>
+
+      <div class="overlay-container">
+        <img src="images/imageGallery.jpg" alt="image gallery project" class="project-image">
+        <div class="image-overlay">
+          <div class="overlay-text">
+            <h4 class="overlay-header">Search Gallery</h4>
+            <p class="mini-description">I created this image gallery where you can search items by description.</p>
+            <button class="more-info-btn">Readme</button><button class="live-view-btn">Live View</button>
+          </div>
+        </div>
+        <div class="hover-items"></div>
+      </div>
+
+    </div>
+
+    <div class="projects-container">
+
+      <div class="overlay-container">
+        <img src="images/apiEmployeeDirectory.jpg" alt="API emplyee directory project" class="project-image">
+        <div class="image-overlay">
+          <div class="overlay-text">
+            <h4 class="overlay-header">Employee Directory</h4>
+            <p class="mini-description">I created an employee directory that uses an API to generate random profiles. These profiles can be filtered.</p>
+            <button class="more-info-btn">Readme</button><button class="live-view-btn">Live View</button>
           </div>
         </div>
         <div class="hover-items"></div>
       </div>
     
+    </div>
+  </section>
+
+  <section id="about">
+    <hr class="about-hr">
+    <h2 class="about-head">About</h2>
+    <button class="about-btn aboutMe">About me</button><button class="about-btn skills">Skills</button>
+  
+  <div class="aboutMe-overlay">
+    <div class="aboutMe-overlay-card">
+      <p class="close aboutClose">X</p>
+      <div>
+        <img src="images/Roald.jpg" alt="profile picture of Roald" class="profile-image">
+        <p class="about-p">Currently located in: US (AST)</p>
+        <p class="about-p">Originally from: The Netherlands</p>
+        <hr>
+        <h2>About me</h2>
+        <p class="about-p">I have been working remotely in sales and marketing while I learned to be a developer. I'm excited to start a new career and level up my life and long term goals. I love to travel, hike, and climb mountains. I like creating logical systems that help me get the most out of my life. And I write some of these systems down. I published my first book a few years ago.</p>
+      </div>
+    </div>
+    <p class="to-skills">></p>
+  </div>
+
+  <div class="skills-overlay">
+    <p class="to-aboutMe"><</p>
+    <div class="skills-overlay-card">
+      <p class="close skillsClose">X</p>
+      <div>
+        <h2 class="skills-h2">Current Skills:</h2>
+        <ul class="skills-ul">
+          <li class="skills-li">HTML</li>
+          <li class="skills-li">CSS</li>
+          <li class="skills-li">SASS</li>
+          <li class="skills-li">JavaScript</li>
+          <li class="skills-li">JQuery</li>
+          <li class="skills-li">GSAP</li>
+          <li class="skills-li"><button class="more-skills">More Current Skills</button></li>
+        </ul>
+        <hr class="skills-hr">
+        <h3 class="skills-h3">What I'm learning next</h3>
+        <p class="skills-p"><strong>React: </strong>I'm aware that react plays a significant role in front end development and won't leave it out of my skillset for long.</p>
+        <hr class="skills-hr">
+        <h3 class="skills-h3">Carreer Goal</h3>
+        <p class="skills-p">within the next years I'm aiming to become a full stack developer. I would love to achieve this whilst working as a front end developer.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="more-skills-overlay">
+    <div class="more-skills-overlay-card">
+      <p class="close moreSkillsClose">X</p>
+      <div>
+        <h2>Current Skills continued</h2>
+        <ul class="skills-ul">
+          <li class="more-skills-li">AJAX</li>
+          <li class="more-skills-li">Bootstrap 4</li>
+          <li class="more-skills-li">Desigining and creating SVG images</li>
+          <li class="more-skills-li">User experience Design</li>
+          <li class="more-skills-li">Mobile-first Design</li>
+          <li class="more-skills-li">Dark mode Design</li>
+          <li class="more-skills-li">Debugging / Troubleshooting</li>
+          <li class="more-skills-li">GitHub version controll</li>
+          <li class="more-skills-li">Refactoring code</li>
+          <li class="more-skills-li">Documenting code</li>
+          <li class="more-skills-li">Using plugins</li>
+          <li class="more-skills-li">KISS coding</li>
+          <li class="more-skills-li">Asana / Slack</li>
+          <li class="more-skills-li">QA / Reviewing code</li>
+          <li class="more-skills-li"><button class="backTo-skills">Back to Skills</button></li>
+        </ul>
+      </div>
+    </div>
+  </div>
 
   </section>
+
+</main>
+
+<footer>
+  <hr class="foot-hr">
+  <h2 id="contact">Contact</h2>
+  <p class="foot-p">If you are interested in employing my skills, Email me at: <a href="mailto:r.j.kamman@gmail.com?subject=I%20am%20interested%20in%20employing%20your%20skills" class="email">R.J.kamman@gmail.com</a></p>
+
+<ul class="foot-ul">
+  <li><a href="https://www.linkedin.com/in/roaldjurriankamman/" target="_blank" class="social linkedin">LinkedIn</a></li>
+  <li><a href="https://github.com/Roaldkamman" target="_blank" class="social github">Github</a></li>
+</ul>   
+<hr class="foot-hr">
+<small class="copyright">Copyright 2020, Roald Jurrian Kamman</small>
+</footer>
   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>

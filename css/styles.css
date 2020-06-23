@@ -38,6 +38,13 @@ h1 {
     margin-bottom: 30px;
 }
 
+.signature {
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
 .container {
     display: flex;
     flex-wrap: wrap;
@@ -58,6 +65,7 @@ h1 {
     margin-bottom: 10px;
     background-color: black;
     box-shadow: 3px 1px 1px 2px rgba(255, 255, 255, 0.5);
+    z-index: 999;
 }
 
 .nav-ul {
@@ -68,20 +76,22 @@ h1 {
     padding-left: 0;
     padding-right: 20px;
     margin-bottom: 20px;
-    z-index: 100;
+    z-index: 999;
 }
 
-li {
+.nav-li {
     letter-spacing: 1px;
     list-style: none;
     display: block;
     margin-left: 20px;
     font-size: 20px;
+    cursor: pointer;
 }
 
-li:hover {
+.nav-li:hover {
     text-shadow: -2px 2px 1px rgb(112, 112, 112);
     transform: scale(1.3);
+    transition: 0.5s ease;
 }
 
 a {
@@ -162,12 +172,12 @@ a {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding-bottom: 200px;
 }
 
 .overlay-container {
     position: relative;
     width: 80%;
+    margin-bottom: 20px;
 }
 
 .project-image {
@@ -176,6 +186,7 @@ a {
     height: auto;
     transition: .5s ease;
     border-radius: 20%;
+    max-height: 185px;
 }
 
 .image-overlay {
@@ -195,14 +206,16 @@ a {
     height: 100%;
     transition: 1s ease;
     border-radius: 3%;
-    border-top: 2px solid lightgrey;
-    border-left: 2px solid lightgrey;
-    border-right: 2px solid lightgrey;
+    border: 2px solid lightgrey;
 }  
 
 .overlay-container:hover > .project-image {
     transition: .5s ease;
     border-radius: 3%;
+}
+
+.overlay-container:hover > .hover-items {
+    display: block;
 }
 
 .overlay-text {
@@ -214,17 +227,42 @@ a {
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+    transition: 1s ease;
     text-align: center;
     text-shadow: -2px 2px 1px rgb(0, 0, 0);
     letter-spacing: 1px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 95%;
+    justify-content: center;
+}
+
+.overlay-header {
+    font-size: 30px;
+    margin: 0;
+}
+
+.mini-description {
+    margin: 0 0 10px;
 }
 
 .hover-items {
-    padding-bottom: 120px;
+    display: none;
 }
 
 .more-info-btn {
     margin-right: 10px;
+}
+
+.parallax {
+    height: 1029px;
+    background-image: url(../images/techevenmoreshadow.jpg);
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    background-attachment: fixed;
+    transition: 1s ease;
 }
 
 button {
@@ -239,7 +277,214 @@ button {
 
 button:hover {
     box-shadow: -1px 1px 1px 2px rgba(0, 0, 0, 0.5);
+    transform: scale(1.05);
+    transition: 0.5s ease;
+}
+
+#about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+    padding-bottom: 60px;
+}
+
+.about-hr {
+    width: 100%;
+}
+
+.about-head {
+    width: 100%;
+    text-align: center;
+    margin: 5px 0 20px;
+}
+
+.skills {
+    margin-left: 20px;
+}
+
+.about-btn {
+    font-size: 25px;
+    padding: 10px 20px;
+}
+
+.about-btn:hover {
+    transform: scale(1.2);
+    box-shadow: 0 6px 6px 0 rgba(255, 255, 255, 0.61);
+    transition: 0.5s ease;
+}
+
+.aboutMe-overlay, 
+.skills-overlay,
+.more-skills-overlay {   
+    background-color: rgba(97, 97, 97, 0.795);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: black;
+}
+
+.aboutMe-overlay-card, 
+.skills-overlay-card,
+.more-skills-overlay-card {
+    width: 80vw;
+    background: white;
+    height: 95vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    position: relative;
+}
+
+.about-p,
+.skills-p {
+    margin: 16px;
+    letter-spacing: 1px;
+    font-size: 17px;
+}
+
+.close {
+    font-size: 2rem;
+    cursor: pointer;
+    position: absolute;
+    padding: 1rem;
+    top: 0;
+    right: 0;
+    margin-top: 0;
+}
+
+.to-skills {
+    font-size: 40px;
+    margin-left: 10px;
+    color: white;
+}
+
+.to-aboutMe {
+    font-size: 40px;
+    margin-right: 10px;
+    color: white;
+}
+
+.to-skills:hover,
+.to-aboutMe:hover {
+    transform: scale(1.5);
+    transition: 0.5s ease;
+}
+
+.close:hover {
+    transform: scale(1.5);
+    transition: 0.5s ease;
+}
+
+.profile-image {
+    width: 50%;
+    margin-top: 20px;
+}
+
+.skills-li {
+    letter-spacing: 1px;
+    list-style: none;
+    display: block;
+    font-size: 20px;
+}
+
+.more-skills-li {
+    letter-spacing: 1px;
+    list-style: none;
+    display: block;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.skills-li:hover,
+.more-skills-li:hover {
+    text-shadow: -2px 2px 1px rgb(112, 112, 112);
     transform: scale(1.1);
+    transition: 0.5s ease;
+}
+
+.skills-ul {
+    padding: 0;
+}
+
+.skills-h2 {
+    margin-bottom: 0;
+}
+
+.skills-h3 {
+    letter-spacing: 1px;
+    margin-bottom: 0;
+    margin-top: 5px;
+}
+
+.skills-hr {
+    margin: 0;
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.foot-hr {
+    width: 100%;
+}
+
+.foot-ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.foot-p {
+    letter-spacing: 1px;
+    font-size: 15px;
+}
+
+.email {
+    font-size: 18px;
+    color: rgb(3, 153, 255);
+    text-shadow: 0 1px 1px rgb(255, 253, 253);
+}
+
+a.social {
+    display: inline-block;
+    text-indent: -9999px;
+    width: 30px;
+    height: 30px;
+    background-size: 30px 30px;
+    transition: all .5s;
+}
+  
+a.linkedin {
+    background-image: url(../images/svg/linkedin.svg);
+    z-index: 1;
+}
+
+a.github {
+    background-image: url(../images/svg/github.svg);
+    z-index: 1;
+}
+
+a.social:hover {
+    opacity: 1;
+    transform: scale(1.4) rotate(360deg);
+}
+
+.linkedin {
+    margin-right: 20px;
 }
 
 @media (min-width: 750px) {
