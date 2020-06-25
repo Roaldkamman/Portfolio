@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+    <!--=========================HEADER STARTS==========================-->
+    <title>Yahtzee Dice!</title>
+  </head>
+  <body>
+   <header>
+     <h1 class="text-center" id="dice">Play Yahtzee without physical dice!</h1>
+     <h3 class="text-center">Just in case you lost one or more dices.</h3>
+     <h4 class="text-center">You still need a regular scorecard.</h4>
+
+   </header>
+   <!--=========================HEADER ENDS==========================-->
+   
+   <!--=========================NAV STARTS==========================-->
+
+   <nav class="navbar navbar-expand-lg navbar-dark bg-success fixed-top">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="#dice">Dice.<span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="#instructions">Instructions.</a>
+            <a class="nav-item nav-link" href="#scorecard">Scorecard example.</a>
+        </div>
+        </div>
+   </nav>
+
+   <!--=========================NAV ENDS==========================-->
+
+   <!--=========================CONTENT STARTS==========================-->
+    
+   <h3 class="text-center">Start rolling!</h3>
+     
+    <div class="container">
+        <div class="rolldiv">
+            <ul class="start-roll d-flex justify-content-center">
+                <button class="onClickRoll5">Roll 5 Dices</button>
+                <button class="onClickRoll4">Roll 4 Dices</button>
+                <button class="onClickRoll3">Roll 3 Dices</button>
+                <button class="onClickRoll2">Roll 2 Dices</button>
+                <button class="onClickRoll1">Roll 1 Dice</button>
+            </ul>
+            
+         <h3 class="text-center">Save the numbers you want to keep by clicking on them individually.</h3>
+            <ul class="dice-button d-flex justify-content-center ">
+                <h4 class="rolled-title">You rolled:</h4>
+                <button class="btn_1">0</button>
+                <button class="btn_2">0</button>
+                <button class="btn_3">0</button>
+                <button class="btn_4">0</button>
+                <button class="btn_5">0</button>
+            </ul>
+        </div>
+        
+        <hr>
+
+       <div class="text-center">
+         <input class="text-center myInput" type="text" value="">
+         <button class="clearInput">Clear input</button>
+       </div>
+
+       <hr>
+
+    </div>
+
+<div class="flexbx">
+   <h2 class="text-center" id="instructions">Yahtzee instructions.</h2>
+   <div class="card mx-auto text-center" style="width: 18rem;">
+        <img src="images/YahtzeeRules.png" class="card-img-top" alt="Yahtzee instructions">
+        <div class="card-body">
+        <p class="card-text">Use the dice provided here. Select the numbers of the dice you want to keep and roll the number of dice left. It's simple math. For example: I rolled two 6 dices that I choose to keep. I now use the Three dice roll. 5 - 2 = 3</p>
+        </div>
+   </div>
+</div>
+
+<div class="flexbx">
+   <h2 class="text-center extra-pad" id="scorecard">Yahtzee scorecard</h2>
+   <div class="card mx-auto text-center" style="width: 18rem;">
+        <img src="images/score-sheet.jpg" class="card-img-top" alt="Yahtzee scorecard">
+        <div class="card-body">
+        </div>
+   </div>
+</div>
+  
+
+
+
+   <!--=========================CONTENT ENDS==========================-->
+
+   <!--=========================FOOTER STARTS==========================-->
+   <footer>
+       <hr>
+        <p>If you are interested in employing my skills, Email me at: <a href="mailto:r.j.kamman@gmail.com?subject=I%20am%20interested%20in%20employing%20your%20skills" class="acard">R.J.kamman@gmail.com</a></p>
+
+        <ul>
+            <li><a href="https://www.linkedin.com/in/roaldjurriankamman/" target="_blank" class="social linkedin">LinkedIn</a></li>
+            <li><a href="https://github.com/Roaldkamman" target="_blank" class="social github">Github</a></li>
+        </ul>   
+
+        <small class="copyright">Copyright 2020, Roald Jurrian Kamman</small>
+
+    
+   </footer>
+   <!--=========================FOOTER ENDS==========================-->
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="JS/main.js"></script>
+  </body>
+</html>

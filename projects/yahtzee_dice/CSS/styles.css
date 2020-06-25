@@ -1,0 +1,238 @@
+/* ===================================================================== */
+/* ===============================Universal CSS====================================== */
+
+* { 
+    box-sizing: border-box;
+  }
+
+body {
+    background-color: green;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* ===================================================================== */
+/* ===============================Universal CSS ends====================================== */
+  
+
+/* ===================================================================== */
+/* ===============================heading/headers====================================== */
+h1 {
+    color: #fff;
+    padding-bottom: .5em;
+    padding-top: 100px;
+    margin: 0;
+    font-size: 25px;
+    text-shadow: 0 1px 0 #ccc,
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,    /* Creates 3D text-shadow */
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+}
+
+h1:hover, h2:hover, h3:hover, h4:hover {
+    color: green;
+    transition: all .5s;
+}
+
+h3, h4 {
+    color: #fff;
+    text-shadow: 1px 1px 2px black, 0 0 25px rgb(0, 0, 0), 0 0 5px rgb(0, 0, 0);
+
+}
+
+h3 {
+    font-size: 20px;
+}
+
+h4 {
+    font-size: 15px;
+}
+
+h2 {
+    color: #fff;
+    text-shadow: 1px 1px 2px black, 0 0 25px rgb(0, 0, 0), 0 0 5px rgb(0, 0, 0); 
+}
+
+
+header {
+    background: linear-gradient(rgb(0, 26, 0), transparent 90%),
+    linear-gradient(0deg, green, transparent),    /* Creates ackground header image that flows into the main page seamlessly */
+    #000033 url('../images/dice.jpg') no-repeat center;
+    background-size: cover;
+    overflow: hidden;
+    padding-bottom: 60px;
+}
+
+/* ===================================================================== */
+/* ===============================heading/headers ends====================================== */
+
+
+/* ===================================================================== */
+/* ===============================Content====================================== */
+
+.card{
+    border-bottom: 4px solid #ccc;
+}
+
+.card:hover {
+    transform: scale(1.03);
+    box-shadow: 5px 8px 10px #222;
+    transition: all .5s;
+}
+
+#instructions {
+    margin-top: 40px;
+}
+
+.extra-pad {
+    padding-top: 30px;
+}
+
+.rolled-title {
+    margin-right: 15px;
+}
+
+.rolldiv {
+    margin-bottom: 30px;
+}
+
+button {
+    margin-right: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    min-width: 40px;
+    padding: 5px 10px;
+    border: 1px solid black;
+    font-weight: bold;
+}
+
+
+button:focus, :active {
+    outline: none;
+}
+
+button:hover {
+    transform: scale(1.2);
+    box-shadow: 5px 8px 10px #222;
+    color: #fff;
+    background-color: green;
+    border: 2px solid rgb(6, 182, 0);
+    transition: all .5s;
+}
+
+.rolled-title {
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+.myInput {
+    width: 250px;
+    padding: 10px 5px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+.myInput:hover {
+    transform: scale(1.03);
+    box-shadow: 5px 8px 10px #222;
+    transition: all .5s;
+}
+
+.myInput:focus, :active {
+    outline: none;
+}
+
+.clearInput:hover {
+    background-color: rgb(88, 16, 3);
+    border: 2px solid rgb(185, 31, 4);
+}
+
+/* ===================================================================== */
+/* ===============================Content ends====================================== */
+
+/* ===================================================================== */
+/* ===============================footer/social icons====================================== */
+footer {
+    color: #fff;
+    width: 100%;
+    min-height: 30px;
+    padding: 150px 0 40px 20px;
+    text-align: center;
+  }
+  
+  footer .copyright {
+    top: -8px;
+    font-size: .75em;
+  }
+  
+  footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  footer ul li {
+    display: inline-block;
+  }
+  
+  a.social {
+    display: inline-block;
+    text-indent: -9999px;
+    margin-left: 5px;
+    width: 30px;
+    height: 30px;
+    background-size: 30px 30px;
+    opacity: .4;
+    transition: all .5s;
+  }
+  
+  a.linkedin {
+    background-image: url(../images/linkedin.svg);
+  }
+  a.github {
+    background-image: url(../images/github.svg);
+  }
+  a.social:hover {
+    opacity: 1;
+    transform: scale(1.4) rotate(360deg);
+  }
+
+  a {
+    color: #fff;
+  }
+
+  a:hover {
+    color: rgb(47, 191, 248);
+    transition: all .5s;
+  }
+
+  
+/* ===================================================================== */
+/* ===============================footer/social icons ends====================================== */
+
+/* ===================================================================== */
+/* ===============================media queries start====================================== */
+
+@media (min-width: 768px) {
+  .flexbx {
+     
+  }
+}
+
+
+
+@media (min-width: 1024px) {
+
+}
+
+/* ===================================================================== */
+/* ===============================media queries end====================================== */

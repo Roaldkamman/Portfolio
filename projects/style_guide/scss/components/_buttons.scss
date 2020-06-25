@@ -1,0 +1,44 @@
+.btn {
+    margin-top: 15px;
+    width: 100%;
+    color: $base1;
+    border: none;
+    padding: 10px 0;
+    text-transform: uppercase;
+    border-radius: 5px;
+    &.default {
+    background-color: $base4;
+    &:hover {
+      transition: 1s ease-in-out;
+      background-color: lighten($base4, 15%);
+    }
+   }
+   &.error {
+    background-color: #e4757a;
+    &:hover {
+      transition: 1s ease-in-out;
+      background-color: lighten(#e4757a, 15%);
+    }
+   }
+   &.info {
+    background-color: #927bc1;
+    &:hover {
+      transition: 1s ease-in-out;
+      background-color: lighten(#927bc1, 15%);
+    }
+   }
+   &.success {
+    background-color: #63cc82;
+    &:hover {
+      transition: 1s ease-in-out;
+      background-color: lighten(#63cc82, 15%);
+    }
+   }
+   &.warning {
+    background-color: #fd7856;
+    &:hover {
+      transition: 1s ease-in-out;
+      background-color: lighten(#fd7856, 15%);
+    }
+  }
+}

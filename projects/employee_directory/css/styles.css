@@ -1,0 +1,150 @@
+body {
+    font-family: 'Ubuntu', sans-serif;
+    background-color: rgb(255, 255, 255);
+}
+
+h1,h2,p {
+    padding: 0;
+    margin: 0;
+}
+  
+.header {
+    font-size: 2.5rem;
+    color: black;
+    padding: 1rem 0;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+header {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search {
+    width: 90%;
+    height: 2rem;
+    outline: none;
+    border: 1px solid lightgrey;
+    font-size: 1.4rem;
+    padding: 7px 0 7px 15px;
+    border-radius: 5px;
+    box-shadow: 0 7px 7px 0 rgba(0, 0, 0, 0.521);
+    margin-bottom: 30px;
+}
+  
+.wrap {
+    width: 90%;
+    margin: auto;
+    max-width: 1550px;
+}
+  
+.grid-container {
+    width: 100%;
+    background: white;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+    grid-auto-rows:200px;
+    padding-bottom: 80px;
+}
+
+.grid-item {
+    margin: 1.2rem;
+}
+  
+.employee-card {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: solid 1px lightgrey;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .3s;
+    box-shadow: 1px 1px lightgrey;
+    max-width: 600px;
+}
+
+.employee-card:hover {
+   transform: scale(1.07);
+   border: solid 2px grey;
+   box-shadow: 0 7px 7px 0 rgba(0, 0, 0, 0.521);
+}
+
+.profile-image {
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+  
+.employee-email,
+.locationCity,
+.employee-phone,
+.employee-address,
+.employee-birthday {
+    color: black;
+    margin-top: 8px;
+}
+
+
+.overlay {   
+    background-color: rgba(97, 97, 97, 0.795);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position:fixed;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    visibility: hidden;
+}
+
+.overlay-card {
+    width: 350px;
+    background: white;
+    height: 500px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 0 5px grey;
+    position: relative;
+    padding: 0 1rem;
+    margin: 0 4rem;
+}
+
+.overlay-hr {
+    margin: 1.5rem 0;
+}
+
+.close {
+    font-size: 2rem;
+    cursor: pointer;
+    position: absolute;
+    padding: 1rem;
+    top: 0;
+    right: 0;
+    color: black;
+}
+
+.close:hover {
+    transform: scale(1.5);
+}
+.previous-item,
+.next-item {
+    font-size: 8rem;
+    color: white;
+    cursor: pointer;
+}
+
+.previous-item:hover,
+.next-item:hover {
+    transform: scale(1.2);
+}
