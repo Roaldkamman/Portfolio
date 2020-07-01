@@ -1,7 +1,11 @@
+// URL GRABS ONLY US VARIABLES
 const APIurl = 'https://randomuser.me/api/?results=12&nat=us&inc=name,location,email,dob,phone,picture&noinfo';
+
+// SELECTORS
 const grid = document.querySelector('.grid-container');
 const searchInput = document.querySelector('.search');
 
+// FUNCTION MAPS DATA AND ASSIGNS IT TO SELECTOS MAKING THEM EASIER TO ACCESS. 
 function mapData(data) {
     const completeData = data.map((employee => {
         const fName = employee.name.first;
@@ -31,6 +35,7 @@ function mapData(data) {
     return completeData;
 }
 
+// ASYNC FUNCTION PARSES URL THROUGH JSON
 async function getEmployees(url) {
     const getEmployees = await fetch(url);
     const toJson = await getEmployees.json();
@@ -41,6 +46,7 @@ async function getEmployees(url) {
     return employeeData;
 }
 
+// FUNCTION THAT BUILDS HTML DATA FROM MAPDATA FUNCTION
 function generateHTML(data) {
     grid.innerHTML = "";
     const HTML = data.map(employee => {
@@ -79,12 +85,15 @@ function generateHTML(data) {
     return HTML;
 }
 
+// RUNS ASYNC FUNTION AND BUILDS THE HTML DISPLAY WITH MAPDATA AND GENERATEHTML FUNCTIONS
 getEmployees(APIurl)
  .then(mapData)
  .then(data => {
     generateHTML(data);
     
+    // EVENT LISTENERS PLACED INSIDE GETEMPLOYEES FUNCTION TO PREVENT PROBLEMS WITH GENERATED CONTENT NOT EXISTING WHEN LISTENER IS ADDED
     searchInput.addEventListener("keyup",function(e) {
+      // THIS FUNCTION FILTERS THROUGH EXISTING GENERATED PROFILES AND DISPLAYS THOSE THAT MATCH THE SEARCH
         const currentValue = searchInput.value.toLowerCase();
         if (currentValue !== "") {
           let searched = [];
@@ -112,7 +121,8 @@ getEmployees(APIurl)
             e.target.closest(".employee-card").nextElementSibling.style.visibility = "visible";
           }
         }
-
+        
+        // COMPLEX DOM TRAVERSING NAVIGATION THROUGH GENERATED CONTENT. 
         if (e.target.classList.contains("next-item")) {
           const target = e.target;
           const targetParent = target.parentNode;
@@ -140,4 +150,5 @@ getEmployees(APIurl)
 
       
 })
+// CATCHES POSSIBLE ERRORS AND LOGS THEM
 .catch(err => console.log("an error occurred",err));

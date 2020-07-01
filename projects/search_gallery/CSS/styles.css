@@ -1,3 +1,4 @@
+/* UNIVERSAL STYLING */
 * {box-sizing: border-box;}
 
 body {
@@ -5,6 +6,7 @@ body {
     text-align: center;
 }
 
+/* CONTENT STYLING] */
 .wrap {
     width: 90%;
     margin: 0 auto;
@@ -39,6 +41,8 @@ input {
 img {
     width: 100%;
 }
+
+/* MEDIA QUERIES */
 
 @media (min-width: 501px) {
     li {

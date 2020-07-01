@@ -1,3 +1,30 @@
+
+
+/* HEY THERE! tHIS IS A LONGER FILE. NAVIGATE THROUGH THIS FILE QUICKLY WITH THE FOLLOWING METHOD. 
+
+SELECT ONE OF THE FOLLOWING USING YOUR CURSOR. SELECT FOR EXAMPLE THIS SAMPLE: UNIVERSAL / GENERAL STYLES 
+ONCE SELECTED PRESS LEFT-CTRL + F.  NOW CLICK THE DOWN ARROW IN THE SEARCH WINDOW TO GO TO THE SECTION YOU SELECTED */
+
+/* UNIVERSAL / GENERAL STYLES */
+
+/* HEADER / NAV STARTS */
+
+/* PROJECTS STARTS */
+
+/* ABOUT STARTS */
+
+/* FOOTER STARTS */
+
+/* SVG ANIMATION OVERLAY STYLES STARTS */
+
+/* MEDIA QUERIES START (breakpoints: 768px, 1024px, 1440px */
+
+
+
+
+
+/* UNIVERSAL / GENERAL STYLES */
+
 * {
     box-sizing: border-box;
     font-family: 'Odibee Sans', cursive;
@@ -25,9 +52,23 @@ h2 {
     text-shadow: -2px 2px 1px rgb(112, 112, 112);
 }
 
+/* UNIVERSAL / GENERAL STYLES ENDS */
+
+/* HEADER / NAV STARTS */
+
 #typed {
    font-size: 1.8rem;
    text-shadow: -2px 2px 1px rgb(112, 112, 112);
+   position: absolute;
+}
+
+.text-top {
+    padding-top: 50px;
+    margin-bottom: 30px;
+}
+
+.text-bottom {
+    margin-bottom: 0;
 }
 
 #projects {
@@ -44,9 +85,10 @@ h2 {
 
 .intro-text {
     text-align: center;
+    margin-left: 25px;
+    margin-right: 25px;
     letter-spacing: 1px;
     margin-top: 0;
-    margin-bottom: 30px;
     text-shadow: 1px 1px 1px rgb(0, 0, 0);
 }
 
@@ -117,7 +159,6 @@ a {
     #000000 url('../images/tech.jpg') no-repeat center;
     background-size: cover;
     overflow: hidden;
-    height: 150px;
     margin-top: 80px;
     padding-left: 10px;
     padding-right: 10px;
@@ -163,6 +204,22 @@ a {
     -o-transform: translateY(-13px) rotate(-45deg);
     transform: translateY(-13px) rotate(-45deg); 
 }
+
+.center {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.animate-button {
+    font-size: 1.4rem;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+/* HEADER / NAV ENDS*/
+
+/* PROJECTS STARTS */
 
 .projects-container {
     display: flex;
@@ -293,6 +350,10 @@ button {
     text-shadow: -2px 2px 1px rgb(0, 0, 0);
 }
 
+/* PROJECTS ENDS */
+
+/* ABOUT STARTS */
+
 #about {
     display: flex;
     flex-wrap: wrap;
@@ -320,7 +381,8 @@ button {
     padding: 10px 20px;
 }
 
-.about-btn:hover {
+.about-btn:hover,
+.animate-button:hover {
     transform: scale(1.2);
     box-shadow: 0 6px 6px 0 rgba(255, 255, 255, 0.61);
     transition: 0.5s ease;
@@ -447,6 +509,10 @@ button {
     margin: 0;
 }
 
+/* ABOUT ENDS */
+
+/* FOOTER STARTS */
+
 #contact {
     width: 100%;
 }
@@ -509,6 +575,45 @@ a.social:hover {
 .linkedin {
     margin-right: 20px;
 }
+/* FOOTER ENDS */
+
+/* SVG ANIMATION OVERLAY STYLES STARTS */
+
+/* overlay style with background image */
+.myAnimatedOverlay {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    justify-content: center;
+    z-index: 9999;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url(../images/tech95opacity.jpg);
+}
+
+/* SVG scaling display styles */
+.shape-overlays {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0; 
+    left: 0;
+}
+
+/* cursor change on hover */
+.button-group:hover {
+    cursor: pointer;
+}
+
+.svg-text {
+    letter-spacing: .5px;
+}
+
+/* SVG ANIMATION OVERLAY STYLES ENDS */
+
+/* MEDIA QUERIES START (breakpoints: 768px, 1024px, 1440px */
 
 @media (min-width: 768px) {
         h1 {
@@ -536,6 +641,16 @@ a.social:hover {
 
         .intro-text {
             font-size: 25px;
+            margin-right: 70px;
+            margin-left: 70px;
+        }
+
+        .text-top {
+            padding-top: 70px;
+        }
+
+        .animate-button {
+            font-size: 2rem;
         }
 
         #typed {
@@ -646,6 +761,10 @@ a.social:hover {
             padding: 10px;
         }
 
+        .more-info-btn {
+            margin-right: 40px;
+        }
+
         .live-view-btn:hover,
         .more-info-btn:hover {
             transform: scale(1.2);
@@ -748,6 +867,21 @@ a.social:hover {
         .live-view-btn,
         .more-info-btn {
            padding: 15px;
+        }
+
+        .animate-button {
+            font-size: 2.5rem;
+            margin-top: 25px;
+            margin-bottom: 60px;
+        }
+
+        .text-top {
+            padding-top: 90px;
+        }
+
+        .intro-text {
+            margin-right: 100px;
+            margin-left: 100px;
         }
 }
 
@@ -885,4 +1019,21 @@ a.social:hover {
         font-size: 20px;
     }
 
+    .animate-button {
+        font-size: 3rem;
+        margin-top: 35px;
+        margin-bottom: 80px;
+    }
+
+    .text-top {
+        padding-top: 120px;
+    }
+
+    .intro-text {
+        margin-right: 120px;
+        margin-left: 120px;
+    }
+
 }
+
+/* MEDIA QUERIES START */

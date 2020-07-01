@@ -1,4 +1,4 @@
-
+// SEARCH THROUGH DESCRIPTIONS FUNCTION AND SHOW MATCHES
 $('#search').keyup(function() {
   const $searchInput = $('#search').val().toLowerCase();
 
@@ -13,6 +13,7 @@ $('#search').keyup(function() {
    });
 });
 
+// LIGHTBOX SETTINGS
 lightbox.option({
     'resizeDuration': 500,
     'fadeDuration': 900,

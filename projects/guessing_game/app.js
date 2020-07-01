@@ -1,5 +1,3 @@
-//create counters that count how many times they won and lost. 
-
 //global constant variables
 const qwerty = document.querySelector('#qwerty');
 const phrase = document.querySelector('#phrase ul');
@@ -17,7 +15,7 @@ let lost = 0;
 let missed = 0;
 let overlayMessage = document.querySelector('.title');
 
-//global constant arrays
+//global constant array
 const phrases = [
     'Ctrl Shift I',
     'Developer Tools',
@@ -35,8 +33,8 @@ const phrases = [
     'File Too Large'
 ];
 
+// CLEARS OVERLAYS
 function clearOverlay() {
-    //not completely sure what the syntax is for putting them together outside of Jquery. This isn't DRY but I will make an exception to save time. 
     overlay.classList.remove('start');
     overlay.classList.remove('win');
     overlay.classList.remove('lose');
