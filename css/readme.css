@@ -623,6 +623,13 @@ a.social:hover {
 .linkedin {
     margin-right: 20px;
 }
+
+.new-btn {
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 15px;
+}
+
 /* FOOTER ENDS */
 
 /* SVG ANIMATION OVERLAY STYLES STARTS */
@@ -883,6 +890,12 @@ a.social:hover {
         li {
             font-size: 20px;
         }
+
+        .new-btn {
+            display: inline-block;
+            margin-left: 40px;
+            font-size: 25px;
+        }
 }
 
 @media (min-width: 1024px) {
@@ -957,6 +970,10 @@ a.social:hover {
         p,
         li {
             font-size: 28px;
+        }
+       
+        #general {
+            width: 80%;
         }
 }
 
