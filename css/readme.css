@@ -63,6 +63,7 @@ h2 {
    font-size: 1.8rem;
    text-shadow: -2px 2px 1px rgb(112, 112, 112);
    position: absolute;
+   padding-left: 10px;
 }
 
 .text-top {
