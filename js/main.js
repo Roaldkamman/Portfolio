@@ -76,7 +76,7 @@ $mClose.click(function() {
 
 // TYPED 
 const typed = new Typed('#typed', {
-    strings: ["- JavaScript...", "- HTML5...", "- CSS3...", "- Front end Web Developer."],
+    strings: ["- JavaScript...", "- HTML5...", "- CSS3...", "- React...", "- Front end Web Developer."],
     typeSpeed: 100,
     smartBackspace: true,
     startDelay: 200,
