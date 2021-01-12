@@ -1,4 +1,4 @@
-Go to www.roaldkamman.com for the full website. You can find the README's of all my projects there including the one from this portfolio. 
+This is an outdated portfolio. Please go to www.authenticdev.dev for my most recent portfolio. 
 
         <h2>This Portfolio</h2>
         <h3>About this Project</h3>
